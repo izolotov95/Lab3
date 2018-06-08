@@ -8,9 +8,9 @@ var calculator =
 		this.a = +prompt('Введите первое число', '');
 		this.b = +prompt('Введите второе число', '');
 	},
-	sum: function()
+	min: function()
 	{
-		return this.a + this.b;
+		return this.a - this.b;
 	},
 	mul: function()
 	{
@@ -19,7 +19,7 @@ var calculator =
 }
 
 calculator.read();
-alert('Сумма введенных чисел: ' + calculator.sum() );
+alert('Разность введенных чисел: ' + calculator.min() );
 alert('Произведение введенных чисел: ' + calculator.mul() );
 </script>
 </body>
