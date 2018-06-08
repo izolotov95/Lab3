@@ -12,15 +12,15 @@ function Calculator()
 	{
 		return this.Val1 + this.Val2;
 	};
-	this.mul = function()
+	this.div = function()
 	{
-		return this.Val1 * this.Val2;
+		return this.Val1 / this.Val2;
 	};
 }
 var calculator = new Calculator();
 calculator.read();
 alert("Сумма введенных чисел: " + calculator.sum());
-alert("Произведение введенных чисел: " + calculator.mul());
+alert("Частное введенных чисел: " + calculator.div());
 </script>
 </body>
 </html>
