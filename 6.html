@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+n = prompt('Введите число', '');
+nN= parseInt(n);
+var nArr = [];
+for (var i = 2; i < nN;i++)
+{
+	nArr[i] = true
+}
+var SVal = 2;
+do
+{
+	for (i=2*SVal;i<nN;i+=SVal)
+	{
+		nArr[i] = false;
+	}
+	for (i = SVal+1; i < nN;i++)
+	{
+ 		if (nArr[i]) break;
+	}
+	SVal= i;
+} while (SVal * SVal < nN)
+var nSum = 0;
+for (i = 0; i < nArr.length;i++)
+{
+	if (nArr[i])
+	{
+		nSum += i;
+	}
+}
+alert(nSum);
+</script>
+</body>
+</html>
