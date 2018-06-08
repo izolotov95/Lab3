@@ -3,7 +3,7 @@
 <script>
 function Calculator()
 {
-	var method =
+	var meth =
 	{
 		"-": function(a, b)
 		{
@@ -17,22 +17,22 @@ function Calculator()
 	this.calculate = function(str)
 	{
 		var split = str.split(' '), a = +split[0], b = split[1], c = +split[2];
-		return method[b](a, c);
+		return meth[b](a, c);
 	}
-	this.addMethod = function(name, func)
+	this.addMeth = function(name, func)
 	{
-		method[name] = func;
+		meth[name] = func;
 	};
 }
 var calc = new Calculator;
-calc.addMethod("*", function(a, b)
+calc.addMeth("*", function(a, b)
 {
 	return a * b;
 });
-calc.addMethod("/", function(a, b) {
+calc.addMeth("/", function(a, b) {
   return a / b;
 });
-calc.addMethod("**", function(a, b) {
+calc.addMeth("**", function(a, b) {
   return Math.pow(a, b);
 });
 
