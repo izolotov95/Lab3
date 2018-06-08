@@ -3,7 +3,7 @@
 <script>
 var ladder =
 {
-	step: 0,
+	step: 13,
 	up: function()
 	{
 		this.step++;
@@ -18,9 +18,14 @@ var ladder =
 	{
 		alert( this.step );
 		return this;
-	}
+	},
+	down2step: function()
+	{
+		this.step = this.step-2;
+		return this;
+	},
 }
-ladder.up().up().down().up().down().showStep();
+ladder.up().up().down().up().down().up().down().up().showStep().down2step().showStep();
 </script>
 </body>
 </html>
