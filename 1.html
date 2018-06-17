@@ -8,7 +8,7 @@ var calculator =
 		this.a = +prompt('Введите первое число', '');
 		this.b = +prompt('Введите второе число', '');
 	},
-	plus: function()
+	sum: function()
 	{
 		return this.a + this.b;
 	},
@@ -19,7 +19,7 @@ var calculator =
 }
 
 calculator.read();
-alert('сумма введенных чисел: ' + calculator.plus() );
+alert('сумма введенных чисел: ' + calculator.sum() );
 alert('Частное введенных чисел: ' + calculator.div() );
 </script>
 </body>
